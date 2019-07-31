@@ -1,0 +1,20 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div>
+    <button type="button" id="btnConsultarDados" onclick="ConsultarDados();">Consultar Dados</button>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Name</th>
+                <th scope="col">Status</th>
+            </tr>
+        </thead>
+        <tbody id="table-body"/>
+    </table>
+</div>
